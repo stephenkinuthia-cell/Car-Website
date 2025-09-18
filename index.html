@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The <head> element contains metadata about the page (information for browsers and search engines, not content shown to visitors) -->
+<head>
+
+    <!-- Declares the character encoding for the document.
+        UTF-8 supports almost every character from all languages, including symbols and emojis. -->
+    <meta charset="UTF-8">
+
+    <!-- The viewport meta tag helps the page display well on screens.
+        width=device-width   → makes the page match the device’s screen width
+        initial-scale=1.0    → opens the page at 100% zoom (no automatic scaling) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The <title> element sets the page’s title.
+        This text appears in the browser tab, bookmarks, and search engine results. -->
+    <title>Car Website</title>
+
+    <!-- The <link> element is used to connect external resources to this HTML document.
+        rel="stylesheet" tells the browser that the linked file is a CSS stylesheet.
+        href="./styles.css" gives the location of the stylesheet (in this case,
+        a file named "styles.css" in the same folder as this HTML file).
+        This allows you to keep your styling rules separate from your HTML content,
+        making your code cleaner and easier to maintain. -->
+    <link rel="stylesheet" href="./styles.css">
+
+        <!-- The <script> element lets you load and run JavaScript in your page.
+        src="https://kit.fontawesome.com/a7efdc839d.js"
+            → This is the URL of the external JavaScript file (here it loads Font Awesome,
+            a library that provides scalable icons).
+        crossorigin="anonymous"
+            → Allows the script to be fetched from another domain without sending
+            user credentials (cookies, authentication headers).
+        Placing this inside the <head> means the script will load before the page body,
+        which is useful for libraries that need to be available early. -->
+    <script src="https://kit.fontawesome.com/a7efdc839d.js" crossorigin="anonymous"></script>
+
+<!-- Closing tag for the <head> section of the HTML document. -->
+</head>
+
+
+<!-- The <body> element contains all the content that will be visible on the web page -->
+<body>
+
+  <!-- <header> represents introductory content, usually containing a logo, navigation, or heading -->
+  <header>
+
+    <!-- <nav> defines the navigation section of the page -->
+    <nav>
+
+      <!-- A container <div> that holds navigation items, given the class "nav-container"
+           so it can be styled with CSS -->
+      <div class="nav-container">
+
+        <!-- A menu icon (often called a "burger menu") that users can click to open navigation on small screens.
+             Note: the class attribute should be inside the opening tag -->
+        <div class="burger" id="burger">
+          <!-- Font Awesome icon for the menu button (should be "fa-bars", not "far-bars") -->
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- A close icon that appears when the menu is open, letting users close it -->
+        <div class="close" id="close">
+          <!-- Font Awesome icon for an “X” mark -->
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div> <!-- End of .nav-container -->
+      <ul class="nav-links" id="nav-links">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="logo">
+            </div>
+            <!-- Navigation links to different sections of the website -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>   
+ </header>
+
+ <main>
+    <section id="welcome">
+        <div class="intro">
+            <h1>Welcome To Our Car Website</h1>
+            <p class="caption">
+                Your one-stop solution foe all car-related needs.
+            </p>
+            <p class="more-info">
+                Explore our wide range of services, from buying and selling cars to maintenance tips and reviews. 
+                Join our community of car enthusiasts and stay updated with the latest automotive trends.
+                Here at Car Website, we drive your passion forward!
+            </p>
+
+            <div class="explore">
+                <button class="btn">Learn More</button>
+                <button class="btn">Get Started</button>
+            </div>
+
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="./images/hero.image.jpg" alt="hero Image">
+        </div>
+    </section>
+ </main>
+
+
+
+
+ <script>
+            const burger = document.getElementById('burger');
+            const close = document.getElementById('close');
+            const navLinks = document.getElementById('nav-links');
+
+            // Show menu
+            burger.addEventListener('click', () => {
+                navLinks.classList.add('show')
+                burger.style.display = 'none'
+                close.style.display = 'block'
+            });
+
+            // Hide menu
+            close.addEventListener('click', () => {
+                navLinks.classList.remove('show')
+                burger.style.display = 'block'
+                close.style.display = 'none'
+            });
+            close.style.display = 'none';
+    </script>
+</body>
+</html>
