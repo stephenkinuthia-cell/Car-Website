@@ -42,6 +42,7 @@
     align-items: center;
     background-color: #333;
     list-style: none;
+
 }
 
 .nav-links li{
@@ -72,7 +73,7 @@
 }
 
 .intro{
-    width: 50px;
+    width: 50%;
 }
 
 .intro h1{
