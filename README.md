@@ -2,14 +2,10 @@
 
 A simple, fully-responsive website project built to practice HTML, CSS, and deploying live on GitHub Pages.  
 
-
-
 ## 🔗 Live Demo & Repo
 
 - Live Demo: https://stephenkinuthia-cell.github.io/Car-Website/  
 - GitHub Repository: https://github.com/stephenkinuthia-cell/Car-Website  
-
-
 
 ## 🎯 What I Learned
 
@@ -17,8 +13,6 @@ A simple, fully-responsive website project built to practice HTML, CSS, and depl
 - Styling layouts using CSS  
 - Responsive design (making it look good on mobile & desktop)  
 - How to deploy a static site using GitHub Pages  
-
-
 
 ## 🛠️ Technologies Used
 
@@ -28,13 +22,9 @@ A simple, fully-responsive website project built to practice HTML, CSS, and depl
 | **CSS**    | Styling, layout, responsiveness |
 | **GitHub Pages** | Hosting the live demo |
 
-
-
 ## 🙌 Special Thanks
 
 Special thanks to [@**Teach2Give**](https://github.com/Teach2Give)and especially to [@Brian kemboi](https://github.com/kemboi590) for the guidance and support in learning how to build this project.  
-
-
 
 ## 📂 Repository Structure
 Car-Website/ 
