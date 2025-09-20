@@ -32,7 +32,7 @@ A simple, fully-responsive website project built to practice HTML, CSS, and depl
 
 ## 🙌 Special Thanks
 
-Special thanks to [@**Teach2Give**](https://github.com/Teach2Give)and especially to [@Brian kemboi](https://github.com/kemboi590) for the guidance and support in starting this project.  
+Special thanks to [@**Teach2Give**](https://github.com/Teach2Give)and especially to [@Brian kemboi](https://github.com/kemboi590) for the guidance and support in learning how to build this project.  
 
 
 
